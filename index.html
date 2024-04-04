@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en" class="light-mode">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <title>Simple Homepage</title>
+</head>
+<body>
+    <header class="header d-flex">
+        <div class="header-logo">
+            <img src="img/alarado-icon-homepage.svg" alt="logo icon light">
+        </div>
+        <div class="header-menu">
+            <ul class="d-flex">
+                <li class="current-item"><a href="#">About us</a></li>
+                <li><a href="#">Product</a></li>
+                <li><a href="#">Resource</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </div>
+        <div class="header-mode">
+            <label class="switcher">
+                <input type="checkbox" id="slider">
+                <span class="slider"></span>
+            </label>
+        </div>
+        <div class="mobile-hamburger">
+            <img src="img/hamburger.webp" alt="hamburger">
+        </div>
+        <div class="mobile-menu">
+            <div class="close-mobile-menu">
+                <img src="img/close.png" alt="close icon">
+            </div>
+            <ul>
+                <li class="current-item"><a href="#">About us</a></li>
+                <li><a href="#">Product</a></li>
+                <li><a href="#">Resource</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+            <div class="header-mode-mobile">
+                <label class="switcher">
+                    <input type="checkbox" id="slider">
+                    <span class="slider"></span>
+                </label>
+            </div>
+        </div>
+    </header>
+    <main class="d-flex">
+        <div class="left-col">
+            <div class="left-col-wrapper">
+                <div class="left-col-content">
+                    <p class="homepage-subtitle">😎  Simple way to communicate</p>
+                    <p class="homepage-title">Actions for Accessibility in Design</p>
+                    <p class="homepage-text">The fastest way to build and deploy websites with resusable components.</p>
+                </div>
+                <div class="left-col-cta d-flex">
+                    <a href="#" class="cta-btn start-btn">Get started</a>
+                    <a href="#" class="cta-btn demo-btn">Get live demo</a>
+                </div>
+                <div class="left-col-perks">
+                    <ul class="d-flex">
+                        <li>No credit card required</li>
+                        <li>No software to install</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="right-col">
+            <div class="right-col-wrapper">
+                <img src="img/hero-image-simple-homepage.webp" alt="">
+            </div>
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
