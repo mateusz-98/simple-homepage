@@ -7,7 +7,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const mobileMenu = document.querySelector(".mobile-menu");
     const closeBtn = document.querySelector(".close-mobile-menu");
 
-    slider.checked = false;
+    /* slider.checked = false; */
     
     const setMode = (modeType) => {
         localStorage.setItem("mode", modeType);
