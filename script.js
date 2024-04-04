@@ -7,7 +7,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const mobileMenu = document.querySelector(".mobile-menu");
     const closeBtn = document.querySelector(".close-mobile-menu");
 
-    slider.checked = false;
+    slider.checked = true;
     
     const setMode = (modeType) => {
         localStorage.setItem("mode", modeType);
@@ -32,18 +32,6 @@ document.addEventListener("DOMContentLoaded", () => {
     const closeMenu = (e) => {
         mobileMenu.classList.remove("open-menu");
     }
-
-    (function () {
-        if(localStorage.getItem("mode") === "dark-mode") {
-            setMode("light-mode");
-            slider.checked = true;
-            logo.src = "img/alarado-icon-homepage.svg";
-        } else {
-            setMode("dark-mode");
-            slider.checked = false;
-            logo.src = "img/alarado-icon-homepage-dark.svg";
-        }
-    })();
     
     input.addEventListener("change", toggleMode);
     hamburger.addEventListener("click", openMenu);
